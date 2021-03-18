@@ -1,0 +1,402 @@
+ * {
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+ }
+
+
+ :root {
+     --font-family: 'Roboto', sans-serif;
+     --color-red: #D6000D;
+ }
+ a {
+     text-decoration: none;
+ }
+
+ button {
+    font-family: var(--font-family);
+    outline: none;
+ }
+ ul {
+     list-style: none;
+ }
+
+
+ body {
+     font-family: var(--font-family);
+ }
+
+ .header {
+     width: 100%;
+     display: flex;
+     justify-content: space-between;
+     flex-wrap: wrap;
+     align-items: center;
+     padding: 10px 20px;
+ }
+
+ .header .logo {
+     font-size: 3rem;
+     color: var(--color-red);
+     font-weight: bold;
+     
+ }
+
+ .header .menu ul {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+
+ .header .menu li a {
+   padding: 14px;
+   font-weight: bold;
+   font-size: 1.25rem;
+   margin-right: 10px;
+   color: black;
+}
+
+
+.header .menu li button{
+   color: #fff;
+   min-width: 150px;
+   padding: 5px;
+   border-radius: 5px;
+   border: 1px solid var(--color-red);
+   background-color: var(--color-red);
+   font-size: 1.25rem;
+   cursor: pointer;
+ }
+
+
+.principal {
+     max-width: 960px;
+     margin: 0 auto;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+    
+ }
+
+.principal img {
+     width: 50%;
+ }
+
+.principal .conteudo {
+     width: 50%;
+     display: flex;
+     flex-direction: column;
+     justify-content: flex-start;
+     align-items: flex-start;
+     flex-wrap: wrap;
+     margin-left: 20px;
+ }
+
+.principal .conteudo span {
+     color: black;
+     font-weight: bold;
+     font-size: 1.25rem;
+}
+
+.principal .conteudo h1 {
+    color: var(--color-red);
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.principal .conteudo button {
+    background-color: var(--color-red);
+    border: 2px solid var(--color-red);
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    min-width: 300px;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.principal .conteudo button:hover {
+    filter: brightness(90%);
+}
+
+
+.servicos {
+
+    max-width: 960px;
+    margin: 0 auto;
+    padding-top: 80px;
+    margin-top: 100px;
+    
+}
+
+.servicos-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.servicos-list {
+    list-style: none;
+    width: 50%;
+}
+
+.servicos-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.servicos-list li i {
+    color: var(--color-red);
+    font-size: 2rem;
+    margin-right: 15px;
+}
+.servicos-list li span {
+    color: black;
+    font-size: 1.2rem;
+}
+.servicos-img {
+    width: 50%;
+}
+
+.servicos-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 50px;
+}
+
+.servicos-form h2{
+    color: black;
+    margin-bottom: 10px;
+}
+
+.servicos-form form {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.servicos-form form input {
+    background-color: lightgray;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    min-width: 258px;
+    margin-right: 10px;
+    height: 60px;
+    padding: 10px 10px 5px 20px;
+    font-size: 1.25rem;
+}
+.servicos-form form input::placeholder {
+    color: black;
+    font-size: 1.25rem;
+}
+.servicos-form form button {
+    background-color: var(--color-red);
+    border: 2px solid var(--color-red);
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    min-width: 258px;
+    height: 60px;
+    font-size: 1.25rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+.clientes {
+    max-width: 960px;
+    margin: 0 auto;
+    padding-top: 80px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.clientes .card:nth-child(1) {
+    margin-right: 10px !important;
+}
+.clientes .card {
+    width: 45%;
+    position: relative;
+    display: flex;
+    padding: 18px 8px;
+    background-color: lightgray;
+    border-radius: 10px;
+
+}
+
+.clientes .card .img {
+    width: 60px;
+    height: 60px;
+    background-color: var(--color-red);
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.clientes .card .content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 20px;
+}
+
+.clientes .card .content p {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    max-width: 320px;
+}
+.clientes .card .content span {
+    font-size: 1.25rem;
+    font-weight: 400;
+    margin-bottom: 3px;
+}
+
+
+.footer {
+    width: 100%;
+    background-color: black;
+    padding: 50px 10px;
+    margin-top: 60px;
+}
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    color: white;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.footer-content .estrutura {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 120px;
+}
+.footer-content .codar .title {
+    font-size: 2rem;
+     color: white;
+     font-weight: bold;
+     margin-bottom: 10px;
+}
+.footer-content .sobre .title {
+    font-size: 1.5rem;
+     color: white;
+     font-weight: bold;
+     margin-bottom: 10px;
+}
+.footer-content .sobre span {
+    width: 174px;
+}
+.footer-content .contato .title {
+    font-size: 1.5rem;
+     color: white;
+     font-weight: bold;
+     margin-bottom: 10px;
+}
+.footer-content .contato ul li {
+    margin: 10px;
+    margin-left: 0;
+}
+
+.footer-content .redes-sociais .title {
+    font-size: 1.5rem;
+     color: white;
+     font-weight: bold;
+     margin-bottom: 10px;
+}
+.footer-content .redes-sociais ul {
+    display: flex;
+}
+.footer-content .redes-sociais ul li i {
+    margin: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width: 720px) {
+    .header {
+        justify-content: center;
+    }
+    .header .logo {
+        margin-bottom: 10px;
+    }
+    .header .menu ul .li-button {
+        display: none;
+    }
+    .principal {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        
+    }
+    .principal img {
+        margin-top: 20px;
+        width: 80%;
+
+    }
+    .principal .conteudo {
+        width: 100%;
+        margin-top: 30px;
+        justify-content: center;
+        align-items: center;
+       
+    }
+    .principal .conteudo h1 {
+        font-size: 2rem;
+    }
+    .servicos {
+        width: 100%;
+        margin-top: 60px;
+        padding: 0 40px;
+    }
+    .servicos-content {
+        flex-direction: column-reverse;
+    }
+    .servicos-list {
+        width: 100%;
+        margin-top: 30px;
+       
+    }
+    .servicos-img {
+        width: 80%;
+    }
+    .servicos-form h2 {
+        font-size: 1rem;
+    }
+    .servicos-form form input {
+        margin-bottom: 10px;
+    }
+    .servicos-form form button {
+        width: 273px;
+    }
+    .clientes {
+        width: 100%;
+        flex-direction: column;
+    }
+    .clientes .card {
+        width: 90%;
+        margin: 10px;
+    }
+    .footer-content {
+        width: 100%;
+        justify-content: flex-start;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .estrutura  {
+        margin: 20px 0px;
+    }
+
+}
+
+
